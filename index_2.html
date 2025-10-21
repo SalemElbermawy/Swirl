@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Upload Guide - Handwritten Style</title>
+    <link rel="stylesheet" href="style_2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="page-container">
+        <header>
+            <h1 class="title">My GitHub Terminal Guide</h1>
+            <p class="subtitle">Quick notes on how to push your code to GitHub</p>
+        </header>
+
+        <main class="content-section">
+            <section class="step">
+                <h2>Step 1: Initialize Git in your project</h2>
+                <p>First, navigate to your project folder in the terminal. Then, tell Git to start tracking your project:</p>
+                <div class="code-block">
+                    <pre><code>cd /path/to/your/project</code></pre>
+                    <pre><code>git init</code></pre>
+                </div>
+                <p>This creates a hidden `.git` folder in your directory.</p>
+            </section>
+
+            <section class="step">
+                <h2>Step 2: Add your files</h2>
+                <p>Tell Git which files you want to include in your next commit. You can add all files, or specific ones:</p>
+                <div class="code-block">
+                    <pre><code>git add .</code></pre>
+                    <span class="comment">// Adds all new and modified files to the staging area</span>
+                    <pre><code>git add index.html style.css</code></pre>
+                    <span class="comment">// Adds specific files</span>
+                </div>
+                <p>The <span class="inline-code">git add</span> command moves files from your working directory to the staging area.</p>
+            </section>
+
+            <section class="step">
+                <h2>Step 3: Commit your changes</h2>
+                <p>Now, save a snapshot of your staged files with a descriptive message:</p>
+                <div class="code-block">
+                    <pre><code>git commit -m "Initial commit for my project"</code></pre>
+                </div>
+                <p>The <span class="inline-code">-m</span> flag is for your commit message. Make it meaningful!</p>
+            </section>
+
+            <section class="step">
+                <h2>Step 4: Connect to GitHub (Remote Repository)</h2>
+                <p>On GitHub, create a **new empty repository** (don't initialize with README). Copy the `HTTPS` URL. Then, connect your local project to it:</p>
+                <div class="code-block">
+                    <pre><code>git remote add origin https://github.com/your-username/your-repo-name.git</code></pre>
+                </div>
+                <p><span class="inline-code">origin</span> is just a nickname for your remote repository. Replace the URL with yours!</p>
+            </section>
+
+            <section class="step">
+                <h2>Step 5: Push your local changes to GitHub</h2>
+                <p>Finally, send your committed changes from your local machine to GitHub:</p>
+                <div class="code-block">
+                    <pre><code>git push -u origin main</code></pre>
+                </div>
+                <p>
+                    <span class="inline-code">-u origin main</span> sets the upstream branch, so next time you can just type <span class="inline-code">git push</span>.
+                    If your default branch is named <span class="inline-code">master</span> instead of <span class="inline-code">main</span>, use <span class="inline-code">git push -u origin master</span>.
+                </p>
+            </section>
+
+            <section class="final-note">
+                <h3>That's it!</h3>
+                <p>Your project should now be live on GitHub. Keep pushing updates regularly!</p>
+                <p class="signature">Good luck, programmer!</p>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 My Notes. All rights reserved.</p>
+        </footer>
+    </div>
+
+</body>
+</html>

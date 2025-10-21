@@ -1,0 +1,111 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#home{
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.195);
+    color: rgba(0, 0, 0, 0.875);
+
+}
+
+
+a{
+    text-decoration: none;
+
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 4px;
+}
+ul{
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+nav ul{
+    display: flex;
+
+}
+.container{
+    margin: 0 7rem;
+    height: 100%;
+    /* background: red; */
+    border-radius: 10px;
+}
+
+ul{
+    list-style: none;
+
+}
+nav .logo{
+    margin: 20px;
+    border-radius: 12px;
+    width: 2cm;
+}
+
+nav ul a{
+    padding:20px ;
+    color: rgba(0, 0, 0, 0.875);
+
+}
+
+.main_image img{
+    width: 10px;
+}
+
+#home .content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+     height: 70%;
+
+}
+
+#home .content img{
+    width: 500px;
+    padding: 3px;
+   border-radius: 20px;
+}
+
+
+
+#home .content a{
+    
+    padding: 15px;
+}
+
+
+#home .content .contentText h1{
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+#home .content .contentText p{
+    font-weight: 400;
+    font-style: italic;
+    margin-bottom: 15px;
+    width: 60%;
+}
+
+.btn{
+    font-size: 14px;
+    padding: 10px;
+    background-color: black;
+    border-radius: 20px;
+    color: wheat;
+    margin: 5px;
+}
+
+.btn:hover{
+    background-color: transparent;
+    color: white;
+    border:1px solid  #fff;
+}
